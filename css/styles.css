@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+}
+.nav-container img{
+    width:40px;
+    height:40px;
+    margin:5px;
+    
+}
+.navbar{
+    display:flex;
+    background-color: #150e56;
+    padding :5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar ul{
+    display:flex;
+    list-style-type: none;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+.list-item{
+    margin:10px;
+    padding:5px;
+
+}
+a{
+    text-decoration: none;
+    color:#8fd6e1
+}
+.container-name{
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #8fd6e1;
+    color:#ffffff;
+    height:580px;
+    background-image: url("/images/s.jpg");
+    background-size: auto 600px;
+    
+}
+h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 100px;
+}
+h3,h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #35a792;
+}
+
+img{
+    width:100px;
+    height:100px;
+}
+
+.bottom-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #325288;
+    
+}
+.contactsimage{
+    width:50px;
+    height:50px;
+    margin:20px;
+    padding:10px;
+}
+.contactsimage:hover{
+    transform:translate3d(0px,5px,5px);
+}
+h5{
+    color:#ffffff;
+    padding:5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.skills{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:15px;
+    background-color: #e4fbff;
+}
+.hobbies{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:15px;
+    background-color: #e4fbff;
+}
+.skillcontainer{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:20px;
+}
+.front,.back{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    position:absolute;
+    padding: 14px;
+    
+}
+.face{
+    width: 100%;
+}
+.card{
+    width:21vw;
+    height:340px;
+    position:relative;
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+    margin:40px;
+    
+    
+}
+.front{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 2;
+    backface-visibility: hidden;
+    background-color: #e0e7f0;
+    box-shadow: 5px 5px 5px rgb(155, 155, 155,0.5);
+
+}
+.back{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 25px;
+    z-index: 1;
+    background:whitesmoke;
+    transform:rotateX(180deg);
+    box-shadow: 5px -5px 5px rgb(155, 155, 155,0.5);
+}
+.container:hover .card{
+    transform:rotateX(180deg);
+    
+}
+.container{
+    perspective: 500px;
+    
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    text-align: center;
+}
+hr{
+    border-color:#00b597 ;
+    width:200px;
+    border-style: dotted none none none;
+    border-width:6px;
+}
+.intro{
+    color:#f8f5f1;
+}
+span:before{
+    content:"Hello";
+    animation: head 8s ease-in-out infinite;
+}
+@keyframes head{
+    0% {content:"Hello|";}
+    2% {content:"Hell|";}
+    4% {content:"Hel|";}
+    6% {content:"He|";}
+    8% {content:"H|";}
+    10% {content:"|";}
+    15% {content:"H|";}
+    19% {content:"Ho|";}
+    21% {content:"Hol|";}
+    23% {content:"Hola|";}
+    28% {content:"Hol|";}
+    30% {content:"Ho|";}
+    32% {content:"H|";}
+    37% {content:"|";}
+    39% {content:"H|";}
+    41% {content:"He|";}
+    43% {content:"Hel|";}
+    45% {content:"Hell|";}
+    47% {content:"Hello|";}
+    52% {content:"Hell|";}
+    54% {content:"Hel|";}
+    56% {content:"He|";}
+    58% {content:"H|";}
+    60% {content:"|";}
+    65% {content:"H|";}
+    67% {content:"Ho|";}
+    69% {content:"Hol|";}
+    71% {content:"Hola|";}
+    76% {content:"Hol|";}
+    78% {content:"Ho|";}
+    80% {content:"H|";}
+    82% {content:"|";}
+    87% {content:"H|";}
+    89% {content:"He|";}
+    91% {content:"Hel|";}
+    93% {content:"Hell|";}
+    95% {content:"Hello|";}
+}
+.work{
+    background-color: #e4fbff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    padding: 15px;
+}
+.slider{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:20px;
+    padding:15px;
+
+}
+.slider img{
+    width:500px;
+    height: 320px;
+    margin:20px;
+    border-radius: 10px;
+    box-shadow: 3PX 3px 10px gray;
+    transition: 0.5s ease-in-out;
+}
+.slider img:hover{
+    transform:translate3d(100px);
+    width:600px;
+    height: 400px;    
+}
+.mid{
+    border-style: dotted none none none;
+    width:10%;
+    border-width: 7px;
+    border-color: #51c4d3;
+}
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(184, 230, 252);
+    border-radius:5px ;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#150e56;
+    border-radius:5px ;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:rgb(98, 123, 235);
+    border-radius:5px ;
+}
