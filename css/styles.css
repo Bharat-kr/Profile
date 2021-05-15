@@ -209,6 +209,9 @@ hr.mid{
         width:50%;
         height:35%;
     }
+    .carousal{
+        width:100%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
