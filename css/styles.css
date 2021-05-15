@@ -252,7 +252,7 @@ workimages{
 .bottom-container{
     display:flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: #325288;
