@@ -7,14 +7,13 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <>
-    <div className="relative">
-
-      <Navbar />
-      <div className="flex ">
-        <Sidebar />
-        <Main />
+      <div className="relative">
+        <Navbar />
+        <div className="flex ">
+          <Sidebar />
+          <Main />
+        </div>
       </div>
-    </div>
       <Footer />
     </>
   );
