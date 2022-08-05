@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className="relative">
         <Navbar />
-        <div className="flex ">
+        <div className="flex md:flex-row flex-col-reverse">
           <Sidebar />
           <Main />
         </div>
