@@ -1,14 +1,16 @@
 import React from "react";
-import Home from "./Home";
-import Skills from "./Skills";
-import Work from "./Work";
+import About from "./About/About";
+import Experience from "./Experience/Experience";
+import Projects from "./Projects/Projects";
+import Skills from "./Skills/Skills";
 
 const Main = () => {
   return (
     <div className="bg-yellow-700 grow">
-      <Home />
+      <About />
       <Skills />
-      <Work />
+      <Projects />
+      <Experience />
     </div>
   );
 };
