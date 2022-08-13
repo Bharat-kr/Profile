@@ -3,12 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+}
 @layer components {
   .btn-nav {
-    @apply hover:bg-[#d9d9d926] rounded-lg px-4 py-2;
+    @apply rounded-lg px-4 py-2 hover:bg-[#d9d9d926];
   }
   .btn-nav2 {
-    @apply hover:bg-[#d9d9d926] rounded-lg px-4 py-2 border-c8 border-2 w-4/5 text-center hover:border-transparent;
+    @apply w-4/5 rounded-lg border-2 border-c8 px-4 py-2 text-center hover:border-transparent hover:bg-[#d9d9d926];
   }
 }
 

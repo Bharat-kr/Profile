@@ -10,7 +10,7 @@ const NavbarButton = ({ open, setOpen }) => {
       onClick={() => {
         setOpen((prev) => !prev);
       }}
-      className="lg:hidden w-10 h-10 cursor-pointer"
+      className="h-10 w-10 cursor-pointer lg:hidden"
       xmlns="http://www.w3.org/2000/svg"
     >
       <motion.path

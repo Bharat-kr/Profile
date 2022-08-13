@@ -7,7 +7,7 @@ import Skills from "./Skills/Skills";
 
 const Main = () => {
   return (
-    <div className="bg-yellow-700 grow">
+    <div className="flex flex-col overflow-hidden">
       <Home />
       <About />
       <Skills />

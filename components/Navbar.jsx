@@ -10,11 +10,15 @@ const Navbar = () => {
 
   return (
     <AnimatePresence>
-      <div className="h-[10vh] bg-c1 sticky top-0 z-10 flex items-center px-4 sm:px-8 py-2 sm:py-4 md:px-16 md:py-8 justify-between font-inter text-white ">
+      <div
+        className={`fixed top-0 z-10 flex h-[10vh] w-full items-center justify-between bg-${
+          open ? "c1" : "transparent"
+        } px-4 py-2 font-inter text-white sm:px-8 sm:py-4 md:px-16 md:py-8 `}
+      >
         <a className="text-2xl font-medium" href="#Home">
           Portfolio<sub className="text-base">2022</sub>
         </a>
-        <nav className="lg:flex space-x-4 text-lg hidden" key="main">
+        <nav className="hidden space-x-4 text-lg lg:flex" key="main">
           <a href="#About" className="btn-nav">
             About
           </a>
@@ -30,7 +34,7 @@ const Navbar = () => {
         </nav>
         <a
           href="#Contact"
-          className="hidden lg:flex text-xl border-2 font-medium border-c6 hover:bg-c6 px-8 py-2 rounded-xl"
+          className="hidden rounded-xl border-2 border-c6 px-8 py-2 text-xl font-medium hover:bg-c6 lg:flex"
         >
           Contact Me
         </a>
@@ -38,7 +42,7 @@ const Navbar = () => {
       </div>
       {open && (
         <motion.nav
-          className="md:hidden flex bg-c1 w-full flex-col h-[90vh] fixed top-[10vh] right-0 space-y-4 text-lg p-2 text-white items-center"
+          className="fixed top-[10vh] z-10 flex h-[90vh] w-full flex-col items-center space-y-4 bg-c1 p-2 text-lg text-white md:hidden"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: 100, opacity: 0 }}
