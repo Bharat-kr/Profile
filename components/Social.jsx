@@ -2,13 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 const Social = () => {
-  const data = [
-    "/images/social/linkedin.svg",
-    "/images/social/twitter.svg",
-    "/images/social/instagram.svg",
-    "/images/social/facebook.svg",
-    "/images/social/github.svg",
-  ];
   return (
     <div className="mt-4 flex space-x-5">
       <a

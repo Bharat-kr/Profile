@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import NavbarButton from "./NavbarButton";
 import { motion, AnimatePresence } from "framer-motion";
 import useMediaQuery from "../customHooks/useMediaQuery";
+import Social from "./Social";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -99,6 +100,7 @@ const Navbar = () => {
             >
               Contact Me
             </motion.a>
+            <Social />
           </motion.nav>
         )}
       </AnimatePresence>
