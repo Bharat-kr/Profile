@@ -106,7 +106,7 @@ const Home = () => {
           />
         </motion.svg>
       </div>
-      <div className="absolute top-0 flex h-full w-full flex-col items-center space-y-8 pt-[10vh] text-white">
+      <div className="absolute top-0 flex h-full w-full flex-col items-center pt-[10vh] text-white">
         <p className="font-montserrat text-2xl font-semibold md:text-5xl xl:text-7xl">
           Hello
           <motion.span
