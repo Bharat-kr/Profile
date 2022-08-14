@@ -19,9 +19,11 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed top-0 z-10 flex h-[10vh] w-full items-center justify-between bg-${
-          open ? "c1" : "transparent"
-        } px-4 py-2 font-inter text-white sm:px-8 sm:py-4 md:px-16 md:py-8 `}
+        className={`fixed top-0 z-10 flex h-[10vh] w-full items-center justify-between ${
+          open
+            ? "bg-c1"
+            : "bg-white bg-opacity-10 backdrop-blur-sm backdrop-filter"
+        } px-4 py-2 font-inter text-white sm:px-8 sm:py-4 md:px-16 md:py-8`}
       >
         <a className="text-2xl font-medium" href="#Home" onClick={close}>
           Portfolio<sub className="text-base">2022</sub>

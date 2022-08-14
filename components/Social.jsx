@@ -13,7 +13,7 @@ const Social = () => {
     <div className="mt-4 flex space-x-5">
       <a
         className="group"
-        href="www.linkedin.com/in/bharat-kumar-15bk"
+        href="https://www.linkedin.com/in/bharat-kumar-15bk"
         target="_blank"
         rel="noreferrer"
       >

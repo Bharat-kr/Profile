@@ -106,8 +106,8 @@ const Home = () => {
           />
         </motion.svg>
       </div>
-      <div className="absolute top-0 flex h-full w-full flex-col items-center pt-[10vh] text-white">
-        <p className="font-montserrat text-2xl font-semibold md:text-5xl xl:text-7xl">
+      <div className="absolute top-0 flex h-full w-full flex-col items-center justify-center pt-[10vh] text-white">
+        <p className="font-montserrat text-2xl font-semibold md:text-5xl 2xl:text-7xl">
           Hello
           <motion.span
             animate={{
@@ -120,7 +120,7 @@ const Home = () => {
           , I am
         </p>
         <Name />
-        <p className="font-montserrat text-2xl font-semibold md:text-5xl xl:text-7xl">
+        <p className="font-montserrat text-2xl font-semibold md:text-5xl 2xl:text-7xl">
           and a Web Developer
         </p>
         <Social />
