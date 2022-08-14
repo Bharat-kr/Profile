@@ -12,7 +12,7 @@
     @apply rounded-lg px-4 py-2 hover:bg-[#d9d9d926];
   }
   .btn-nav2 {
-    @apply w-4/5 rounded-lg border-2 border-c8 px-4 py-2 text-center hover:border-transparent hover:bg-[#d9d9d926];
+    @apply w-4/5 rounded-lg border-[1px] border-c8 px-4 py-2 text-center hover:border-transparent hover:bg-[#d9d9d926];
   }
 }
 
