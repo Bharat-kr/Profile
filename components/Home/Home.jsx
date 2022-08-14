@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Name from "./Name";
+import Social from "../Social";
 
 const Home = () => {
   const container = {
@@ -25,7 +27,7 @@ const Home = () => {
   };
   return (
     <div id="Home" className="relative h-screen w-screen">
-      <div className="absolute top-0 h-full w-full">
+      <div className="absolute top-0 h-full w-full bg-c0">
         <motion.svg
           variants={container}
           initial="hidden"
@@ -35,7 +37,7 @@ const Home = () => {
           viewBox="0 0 1200 580"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="h-full w-full min-w-[1200px]"
+          className=" h-full w-full min-w-[1200px]"
         >
           <motion.path
             variants={item}
@@ -104,7 +106,25 @@ const Home = () => {
           />
         </motion.svg>
       </div>
-      <div className="absolute top-0 h-full w-full text-white">asdad</div>
+      <div className="absolute top-0 flex h-full w-full flex-col items-center space-y-8 pt-[10vh] text-white">
+        <p className="font-montserrat text-2xl font-semibold md:text-5xl xl:text-7xl">
+          Hello
+          <motion.span
+            animate={{
+              scale: [1, 2, 2, 1, 1],
+              rotate: [0, 0, 270, 270, 0],
+            }}
+          >
+            🖐
+          </motion.span>
+          , I am
+        </p>
+        <Name />
+        <p className="font-montserrat text-2xl font-semibold md:text-5xl xl:text-7xl">
+          and a Web Developer
+        </p>
+        <Social />
+      </div>
     </div>
   );
 };
