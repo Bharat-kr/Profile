@@ -49,7 +49,6 @@ const NavbarButton = ({ open, setOpen }) => {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-
       <motion.path
         animate={{
           opacity: open ? [1, 0, 0] : [0, 0, 1],

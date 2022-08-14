@@ -1,15 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavbarButton from "./NavbarButton";
 import { motion, AnimatePresence } from "framer-motion";
+import useMediaQuery from "../customHooks/useMediaQuery";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const close = () => {
     setOpen(false);
   };
+  const isMobile = useMediaQuery("(max-width: 1024px)");
+
+  useEffect(() => {
+    if (open && !isMobile) {
+      setOpen(false);
+    }
+  }, [open, isMobile]);
 
   return (
-    <AnimatePresence>
+    <>
       <div
         className={`fixed top-0 z-10 flex h-[10vh] w-full items-center justify-between bg-${
           open ? "c1" : "transparent"
@@ -40,57 +48,59 @@ const Navbar = () => {
         </a>
         <NavbarButton open={open} setOpen={setOpen} />
       </div>
-      {open && (
-        <motion.nav
-          className="fixed top-[10vh] z-10 flex h-[90vh] w-full flex-col items-center space-y-4 bg-c1 p-2 text-lg text-white md:hidden"
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ x: 100, opacity: 0 }}
-          key="secondary"
-        >
-          <motion.a
-            whileHover={{ scale: 1.2 }}
-            href="#About"
-            className="btn-nav2"
-            onClick={close}
+      <AnimatePresence>
+        {open && (
+          <motion.nav
+            className="fixed top-[10vh] z-10 flex h-[90vh] w-full flex-col items-center space-y-4 bg-c1 p-2 text-lg text-white lg:hidden"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: 100, opacity: 0 }}
+            key="secondary"
           >
-            About
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.2 }}
-            href="#Skills"
-            className="btn-nav2"
-            onClick={close}
-          >
-            Skills
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.2 }}
-            href="#Projects"
-            className="btn-nav2"
-            onClick={close}
-          >
-            Projects
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.2 }}
-            href="#Experience"
-            className="btn-nav2"
-            onClick={close}
-          >
-            Experience
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.2 }}
-            href="#Contact"
-            className="btn-nav2"
-            onClick={close}
-          >
-            Contact Me
-          </motion.a>
-        </motion.nav>
-      )}
-    </AnimatePresence>
+            <motion.a
+              whileHover={{ scale: 1.2 }}
+              href="#About"
+              className="btn-nav2"
+              onClick={close}
+            >
+              About
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.2 }}
+              href="#Skills"
+              className="btn-nav2"
+              onClick={close}
+            >
+              Skills
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.2 }}
+              href="#Projects"
+              className="btn-nav2"
+              onClick={close}
+            >
+              Projects
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.2 }}
+              href="#Experience"
+              className="btn-nav2"
+              onClick={close}
+            >
+              Experience
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.2 }}
+              href="#Contact"
+              className="btn-nav2"
+              onClick={close}
+            >
+              Contact Me
+            </motion.a>
+          </motion.nav>
+        )}
+      </AnimatePresence>
+    </>
   );
 };
 
