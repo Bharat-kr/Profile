@@ -15,11 +15,7 @@ const Navbar = () => {
           open ? "c1" : "transparent"
         } px-4 py-2 font-inter text-white sm:px-8 sm:py-4 md:px-16 md:py-8 `}
       >
-        <a
-          className="text-2xl font-semibold shadow-sm"
-          href="#Home"
-          onClick={close}
-        >
+        <a className="text-2xl font-medium" href="#Home">
           Portfolio<sub className="text-base">2022</sub>
         </a>
         <nav className="hidden space-x-4 text-lg lg:flex" key="main">
