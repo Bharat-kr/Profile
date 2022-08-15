@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        grad1: "linear-gradient(91.36deg, #043D94 0.34%, #63D7FF 107.63%)",
+      },
       colors: {
         c0: "#10161f",
         c1: "#160037",

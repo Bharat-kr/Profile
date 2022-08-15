@@ -7,12 +7,27 @@
   margin: 0;
   padding: 0;
 }
+.gradinetText-config {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 @layer components {
   .btn-nav {
     @apply rounded-[10px] px-4 py-2 hover:bg-[#d9d9d926];
   }
   .btn-nav2 {
     @apply w-4/5 rounded-lg border-2 border-c8 px-4 py-2 text-center hover:border-transparent hover:bg-[#d9d9d926];
+  }
+  .heading {
+    @apply bg-grad1 text-center font-poppins text-6xl font-semibold lg:text-8xl;
+  }
+  .text-highlighter {
+    @apply font-semibold text-c1;
+  }
+  .callBackButton {
+    @apply flex items-center space-x-5 rounded-lg border-[5px] border-c8 bg-c3 px-12 py-4 font-poppins text-xl font-bold text-white hover:bg-c1 lg:text-3xl;
   }
 }
 

@@ -45,7 +45,7 @@ const Navbar = () => {
         </nav>
         <a
           href="#Contact"
-          className="hidden rounded-xl border-2 border-c6 px-8 py-2 text-xl font-medium hover:bg-c6 lg:flex"
+          className="hidden rounded-lg border-[2px] border-c8 bg-c3 px-6 py-2 font-poppins text-lg font-medium text-white hover:bg-c1 lg:block lg:text-xl"
         >
           Contact Me
         </a>
