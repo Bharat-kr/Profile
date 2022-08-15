@@ -23,7 +23,7 @@ const Navbar = () => {
         className={`fixed top-0 z-10 flex h-[10vh] w-full items-center justify-between ${
           open
             ? "bg-c1"
-            : "bg-white bg-opacity-10 backdrop-blur-sm backdrop-filter"
+            : "bg-c1 bg-opacity-50 backdrop-blur-sm backdrop-filter"
         } px-4 py-2 font-inter text-white sm:px-8 sm:py-4 md:px-16 md:py-8`}
       >
         <a className="text-2xl font-medium" href="#Home" onClick={close}>

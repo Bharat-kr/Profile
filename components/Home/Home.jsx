@@ -109,15 +109,7 @@ const Home = () => {
       <div className="absolute top-0 flex h-full w-full flex-col items-center justify-center pt-[10vh] text-white">
         <p className="font-montserrat text-2xl font-semibold md:text-5xl 2xl:text-7xl">
           Hello
-          <motion.span
-            animate={{
-              scale: [1, 2, 2, 1, 1],
-              rotate: [0, 0, 270, 270, 0],
-            }}
-          >
-            🖐
-          </motion.span>
-          , I am
+          <span>&#x1F44B;</span>, I am
         </p>
         <Name />
         <p className="font-montserrat text-2xl font-semibold md:text-5xl 2xl:text-7xl">
