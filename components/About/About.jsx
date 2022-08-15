@@ -34,7 +34,7 @@ const About = () => {
             <span>Download CV</span>
           </button>
         </div>
-        <div className="flex w-full grow justify-end overflow-clip lg:w-1/2">
+        <div className="flex w-full justify-end overflow-clip lg:w-1/2">
           <img src="/images/my.svg" alt="" width="90%" />
         </div>
       </div>
