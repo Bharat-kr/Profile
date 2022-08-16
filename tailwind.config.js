@@ -9,6 +9,10 @@ module.exports = {
       backgroundImage: {
         grad1: "linear-gradient(91.36deg, #043D94 0.34%, #63D7FF 107.63%)",
       },
+      boxShadow: {
+        shad1: "4px 4px 20px 10px rgba(1, 71, 176, 0.1)",
+        shad2: "4px 4px 30px 20px rgba(1, 71, 176, 0.1)",
+      },
       colors: {
         c0: "#10161f",
         c1: "#160037",

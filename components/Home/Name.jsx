@@ -36,7 +36,7 @@ const Name = () => {
         <div className="shape shape-3"></div>
       </div>
       <div className="content" onMouseMove={fun}>
-        <h1 className="font-poppins text-8xl font-extrabold leading-[9rem] tracking-wider text-c8 mix-blend-overlay md:text-[10rem] md:leading-[12rem] 2xl:text-[12rem] 2xl:leading-[18rem]">
+        <h1 className="font-poppins text-8xl font-black leading-[9rem] tracking-wider text-c8 mix-blend-overlay md:text-[10rem] md:leading-[12rem] 2xl:text-[12rem] 2xl:leading-[18rem]">
           Bharat
           <br />
           Kumar

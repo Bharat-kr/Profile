@@ -29,7 +29,10 @@ const Skills = () => {
   ];
   const tools = ["vercel", "heroku", "figma", "vscode", "postman", "eth"];
   return (
-    <div id="Skills" className="h-auto w-full bg-c1 pt-[10vh]">
+    <div
+      id="Skills"
+      className="flex h-auto min-h-screen w-full flex-col items-center bg-c1 pt-[10vh]"
+    >
       <h1 className="heading gradinetText-config">My Skillset</h1>
       <div className="mt-4 flex flex-wrap items-center justify-center px-4 xl:px-48">
         {skills.map((item, idx) => {

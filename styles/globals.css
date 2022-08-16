@@ -21,7 +21,7 @@
     @apply w-4/5 rounded-lg border-2 border-c8 px-4 py-2 text-center hover:border-transparent hover:bg-[#d9d9d926];
   }
   .heading {
-    @apply bg-grad1 text-center font-poppins text-6xl font-semibold lg:text-8xl;
+    @apply w-auto bg-grad1 text-center font-poppins text-4xl  font-semibold sm:text-[3rem] lg:text-[4rem] lg:leading-normal;
   }
   .text-highlighter {
     @apply font-semibold text-c6;

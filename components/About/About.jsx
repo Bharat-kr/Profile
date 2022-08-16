@@ -3,7 +3,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id="About" className="h-auto w-full pt-[10vh] lg:h-screen">
+    <div
+      id="About"
+      className="flex h-auto w-full flex-col items-center pt-[10vh] lg:h-screen"
+    >
       <h1 className="heading gradinetText-config">Who I am ?</h1>
       <div className="flex w-full flex-col-reverse justify-start lg:flex-row lg:justify-between">
         <div className="w-full p-4 lg:w-1/2 lg:pl-28">
