@@ -29,6 +29,12 @@
   .callBackButton {
     @apply flex items-center space-x-5 rounded-lg border-[5px] border-c8 bg-c3 px-12 py-4 font-poppins text-xl font-bold text-white hover:bg-c1 lg:text-3xl;
   }
+  .input-label {
+    @apply font-montserrat text-lg font-normal;
+  }
+  .input-el {
+    @apply w-full rounded-md bg-c6 bg-opacity-10 p-2 font-montserrat text-lg font-normal text-c6 outline-none placeholder:text-c6 placeholder:text-opacity-30;
+  }
 }
 
 html {

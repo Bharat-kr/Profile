@@ -3,7 +3,7 @@ import React from "react";
 
 const Social = () => {
   return (
-    <div className="mt-4 flex space-x-5">
+    <div className="flex items-center space-x-5">
       <a
         className="group"
         href="https://www.linkedin.com/in/bharat-kumar-15bk"

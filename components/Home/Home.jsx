@@ -112,7 +112,7 @@ const Home = () => {
           <span>&#x1F44B;</span>, I am
         </p>
         <Name />
-        <p className="font-montserrat text-2xl font-semibold md:text-5xl 2xl:text-7xl">
+        <p className="mb-4 font-montserrat text-2xl font-semibold md:text-5xl 2xl:text-7xl">
           and a Web Developer
         </p>
         <Social />
