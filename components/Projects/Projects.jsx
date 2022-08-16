@@ -4,34 +4,40 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const data = [
     {
-      image: "test",
-      title: "project1",
+      image: "myVOTE.jpg",
+      title: "MY-Vote",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure quaerat veritatis porro. Quod vel beatae quia debitis perspiciatis numquam est. Autem similique fugiat voluptas eligendi natus nemo modi magni quam perspiciatis.",
-      link: "project.com",
+      link: "https://my-vote-bharat-kr.vercel.app/",
     },
     {
-      image: "test",
-      title: "project1",
+      image: "MentorSpace.jpg",
+      title: "MentorSpace-Landing Page",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure quaerat veritatis porro. Quod vel beatae quia debitis perspiciatis numquam est. Autem similique fugiat voluptas eligendi natus nemo modi magni quam perspiciatis.",
-      link: "project.com",
+      link: "https://impulse-task.vercel.app/",
     },
     {
-      image: "test",
-      title: "project1",
+      image: "openChat.jpg",
+      title: "Open Chat",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure quaerat veritatis porro. Quod vel beatae quia debitis perspiciatis numquam est. Autem similique fugiat voluptas eligendi natus nemo modi magni quam perspiciatis.",
-      link: "project.com",
+      link: "https://open-chat-fe011.web.app/",
     },
     {
-      image: "test",
-      title: "project1",
+      image: "fooders.jpg",
+      title: "Fooders",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure quaerat veritatis porro. Quod vel beatae quia debitis perspiciatis numquam est. Autem similique fugiat voluptas eligendi natus nemo modi magni quam perspiciatis.",
-      link: "project.com",
+      link: "https://bharat-fooders.herokuapp.com/",
     },
     {
-      image: "test",
-      title: "project1",
+      image: "boxOffice.jpg",
+      title: "Box Office",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure quaerat veritatis porro. Quod vel beatae quia debitis perspiciatis numquam est. Autem similique fugiat voluptas eligendi natus nemo modi magni quam perspiciatis.",
-      link: "project.com",
+      link: "https://bharat-kr.github.io/box-office/#/",
+    },
+    {
+      image: "TicTacToe.jpg",
+      title: "Tic-Tac-Toe",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure quaerat veritatis porro. Quod vel beatae quia debitis perspiciatis numquam est. Autem similique fugiat voluptas eligendi natus nemo modi magni quam perspiciatis.",
+      link: "https://bharat-tic-tac-toe.surge.sh/",
     },
   ];
   return (

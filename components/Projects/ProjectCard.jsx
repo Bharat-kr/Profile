@@ -9,18 +9,19 @@ const ProjectCard = ({ data }) => {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="w-auto rounded-lg"
-            src={`/images/${data.image}.png`}
+            src={`/images/projects/${data.image}`}
             alt={data.title}
           />
         </div>
         <div className="card-body mt-2">
           <h4 className="font-semibold">{data.title}</h4>
           <p className="opcacity-60 my-2">{data.desc}</p>
-          <a href={data.link}>
+          <a href={data.link} target="_blank" rel="noreferrer">
             <button className="tracking wide flex w-full items-center justify-between rounded-md border-2 border-c1 px-4 font-montserrat text-base font-semibold hover:bg-c1 hover:text-white">
               <span>View Project</span>
               <svg
                 width="51"
+                s
                 height="47"
                 viewBox="0 0 51 47"
                 fill="none"
