@@ -54,6 +54,7 @@ const Contact = () => {
           </button>
         </div>
         <div className="flex w-full justify-center overflow-clip lg:w-1/2">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/contact.svg" alt="" width="60%" />
         </div>
       </div>

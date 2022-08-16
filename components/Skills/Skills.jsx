@@ -37,6 +37,7 @@ const Skills = () => {
       <div className="mt-4 flex flex-wrap items-center justify-center px-4 xl:px-48">
         {skills.map((item, idx) => {
           return (
+            // eslint-disable-next-line @next/next/no-img-element
             <img
               key={idx}
               src={`/images/skillset/${item}.svg`}
@@ -52,6 +53,7 @@ const Skills = () => {
       <div className="mt-4  flex flex-wrap justify-center">
         {tools.map((item, idx) => {
           return (
+            // eslint-disable-next-line @next/next/no-img-element
             <img
               key={idx}
               src={`/images/skillset/${item}.svg`}
