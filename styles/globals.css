@@ -7,6 +7,25 @@
   margin: 0;
   padding: 0;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #10161f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #59cde9;
+  background: -webkit-linear-gradient(to top, #59cde9, #0a2a88);
+  background: linear-gradient(to top, #59cde9, #0a2a88);
+}
+
 .gradinetText-config {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

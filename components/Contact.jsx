@@ -55,7 +55,7 @@ const Contact = () => {
         </div>
         <div className="flex w-full justify-center overflow-clip lg:w-1/2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/contact.svg" alt="" width="60%" />
+          <img src="/images/contact.svg" alt="" className="w-4/5 lg:w-3/5" />
         </div>
       </div>
       <footer className="flex w-full flex-col items-center justify-between space-y-6 bg-c2 px-12 py-4 md:flex-row md:space-y-0">
