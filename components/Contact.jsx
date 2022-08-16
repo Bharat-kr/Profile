@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section
       id="Contact"
-      className="flex h-screen w-full flex-col items-center pt-[10vh]"
+      className="flex h-auto w-full flex-col items-center pt-[10vh] lg:h-screen"
     >
       <h1 className="heading gradinetText-config">Contact Me</h1>
       <div className="flex w-full flex-grow flex-col-reverse justify-start lg:flex-row lg:justify-between">
