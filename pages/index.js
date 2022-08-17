@@ -14,6 +14,7 @@ export default function Home() {
           name="description"
           content="Bharat Kumar is a Full Stack Developer , Learnig constantly and creating better products."
         />
+        <meta name="theme-color" content="#160037" />
         <meta name="keywords" content="" />
 
         {/* Open Graph Facebook  */}
