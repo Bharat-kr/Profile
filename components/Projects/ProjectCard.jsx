@@ -22,7 +22,7 @@ const ProjectCard = ({ data }) => {
           <h4 className="font-montserrat text-lg font-semibold text-c7">
             {data.title}
           </h4>
-          <p className="my-2 h-32 font-montserrat text-sm font-normal">
+          <p className="my-2 h-auto font-montserrat text-sm font-normal md:h-32">
             {data.desc}
           </p>
           <div className="flex items-center justify-between">
