@@ -30,7 +30,7 @@ const ProjectCard = ({ data }) => {
               className="w-3/4"
             >
               {/* view project button */}
-              <button className="flex w-full items-center justify-between rounded-md border-2 border-c1 px-4 font-montserrat text-sm font-semibold tracking-normal hover:bg-c1 hover:text-white md:text-base">
+              <button className="flex w-full items-center justify-between rounded-md border-2 border-c1 px-4 font-montserrat text-sm font-semibold tracking-normal transition-colors ease-in-out hover:bg-c1 hover:text-white md:text-base">
                 <span>View Project</span>
                 <svg
                   width="51"
