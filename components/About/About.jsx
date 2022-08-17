@@ -32,12 +32,15 @@ const About = () => {
             <li>Web Development</li>
             <li>Web3 Development</li>
           </ul>
-          <button className="callBackButton">
-            <Image src="/images/download.svg" alt="" width={40} height={40} />
-            <span>Download CV</span>
-          </button>
+          <a href="/resume/BharatKumar.pdf" download="Bharat Kumar">
+            <button className="callBackButton">
+              <Image src="/images/download.svg" alt="" width={40} height={40} />
+              <span>Download CV</span>
+            </button>
+          </a>
         </div>
         <div className="flex w-full justify-end overflow-clip lg:w-1/2">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/my.svg" alt="" width="90%" />
         </div>
       </div>
