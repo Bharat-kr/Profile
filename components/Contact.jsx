@@ -44,11 +44,11 @@ const Contact = () => {
               className="input-el"
               id="message"
               cols="70"
-              rows="5"
+              rows="3"
             />
           </div>
 
-          <button className="flex items-center rounded-lg border-[5px] border-c8 bg-c3 px-6 py-2 font-poppins text-lg font-bold text-white hover:bg-c1 lg:text-2xl">
+          <button className="flex items-center rounded-lg border-2 border-c8 bg-c3 px-6 py-2 font-poppins text-lg font-bold text-white hover:bg-c1 lg:text-2xl">
             <span className="mr-4">Send</span>
             <Image src="/images/send.svg" alt="" width={30} height={30} />
           </button>
@@ -59,11 +59,11 @@ const Contact = () => {
         </div>
       </div>
       <footer className="flex w-full flex-col items-center justify-between space-y-6 bg-c2 px-12 py-4 md:flex-row md:space-y-0">
-        <span className="font-poppins text-2xl font-medium text-white">
+        <span className="font-poppins text-xl font-medium text-white md:text-2xl">
           Copyright @ 2022
         </span>
         <Social />
-        <span className="font-poppins text-2xl font-medium text-white">
+        <span className="font-poppins text-xl font-medium text-white md:text-2xl">
           Bharat Kumar
         </span>
       </footer>
