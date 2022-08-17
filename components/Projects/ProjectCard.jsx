@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const ProjectCard = ({ data }) => {
   return (
-    <div className="relative mx-auto mb-6 mt-16 w-80 min-w-0 max-w-md break-words rounded-xl bg-white p-4 shadow-shad1 hover:shadow-shad2 xl:max-w-2xl">
+    <div
+      className="relative mx-auto mb-6 mt-16 w-80 min-w-0 max-w-md break-words rounded-xl bg-white p-4 shadow-shad1 hover:shadow-shad2 xl:max-w-2xl"
+      data-aos="fade-left"
+    >
       <div className="card">
         <div className="card-header -mt-6">
           <a href={data.link} target="_blank" rel="noreferrer">
@@ -67,14 +70,13 @@ const ProjectCard = ({ data }) => {
               href={data.code}
               target="_blank"
               rel="noreferrer"
-              className="flex w-1/4 items-center justify-center text-c1"
+              className="flex w-1/4 items-center justify-center fill-white text-c1 hover:fill-c1"
             >
               <svg
                 width="60"
                 height="60"
                 viewBox="0 0 60 60"
                 className="h-8 w-8 stroke-current"
-                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path

@@ -34,7 +34,7 @@ const Skills = () => {
       className="flex h-auto min-h-screen w-full flex-col items-center bg-c1 pt-[10vh]"
     >
       <h1 className="heading gradinetText-config">My Skillset</h1>
-      <div className="mt-4 flex flex-wrap items-center justify-center px-4 xl:px-48">
+      <div className="mt-4 flex flex-wrap items-center justify-center px-2 md:px-4 xl:px-48">
         {skills.map((item, idx) => {
           return (
             // eslint-disable-next-line @next/next/no-img-element
@@ -50,7 +50,7 @@ const Skills = () => {
         })}
       </div>
       <h1 className="heading gradinetText-config">Tools I Use</h1>
-      <div className="mt-4  flex flex-wrap justify-center">
+      <div className="mt-4 flex flex-wrap justify-center">
         {tools.map((item, idx) => {
           return (
             // eslint-disable-next-line @next/next/no-img-element

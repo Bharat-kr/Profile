@@ -2,9 +2,16 @@ import Head from "next/head";
 import Contact from "../components/Contact";
 import Main from "../components/Main";
 import Navbar from "../components/Navbar";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styles from "../styles/Home.module.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Head>
