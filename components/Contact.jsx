@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Social from "./Social";
 import Image from "next/image";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const sendMail = () => {
+    if (name && email && message) {
+      fetch("/api/email", {
+        method: "POST",
+        body: JSON.stringify({
+          email,
+          name,
+          message,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+    }
+  };
   return (
     <section
       id="Contact"
@@ -24,6 +44,10 @@ const Contact = () => {
               className="input-el"
               id="name"
               placeholder="Jhon Doe"
+              value={name}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
             />
             <label htmlFor="email" className="input-label">
               Email
@@ -34,6 +58,10 @@ const Contact = () => {
               id="email"
               className="input-el"
               placeholder="jhon@example.com"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
             />
             <label htmlFor="message" className="input-label">
               Message
@@ -45,10 +73,17 @@ const Contact = () => {
               id="message"
               cols="70"
               rows="3"
+              value={message}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
             />
           </div>
 
-          <button className="flex items-center rounded-lg border-2 border-c8 bg-c3 px-6 py-2 font-poppins text-lg font-bold text-white hover:bg-c1 lg:text-2xl">
+          <button
+            className="flex items-center rounded-lg border-2 border-c8 bg-c3 px-6 py-2 font-poppins text-lg font-bold text-white hover:bg-c1 lg:text-2xl"
+            onClick={sendMail}
+          >
             <span className="mr-4">Send</span>
             <Image src="/images/send.svg" alt="" width={30} height={30} />
           </button>
