@@ -27,7 +27,7 @@ const Navbar = () => {
         } px-4 py-2 font-inter text-white sm:px-8 sm:py-4 md:px-16 md:py-8`}
       >
         <a className="text-2xl font-medium" href="#Home" onClick={close}>
-          Portfolio<sub className="text-base">2022</sub>
+          Portfolio<sub className="text-base">2023</sub>
         </a>
         <nav className="hidden space-x-4 text-lg lg:flex" key="main">
           <a href="#About" className="btn-nav">
@@ -43,9 +43,10 @@ const Navbar = () => {
             Experience
           </a>
         </nav>
+
         <a
           href="#Contact"
-          className="hidden rounded-lg border-[2px] border-c8 bg-c3 px-6 py-2 font-poppins text-lg font-medium text-white hover:bg-c1 lg:block lg:text-xl"
+          className="hidden rounded-xl border-[2px] border-c8 bg-c3 px-6 py-2 font-poppins text-lg font-medium text-white hover:bg-c1 lg:block lg:text-xl"
         >
           Contact Me
         </a>

@@ -16,16 +16,7 @@ const Skills = () => {
     "google-cloud",
     "git",
     "solidity",
-    "web3js",
-  ];
-  const skills2 = [
-    "sass",
-    "mongodb",
-    "firebase",
-    "google-cloud",
-    "git",
-    "solidity",
-    "web3js",
+    "etherjs",
   ];
   const tools = ["vercel", "heroku", "figma", "vscode", "postman", "eth"];
   return (

@@ -17,12 +17,19 @@ export default function Home() {
       <Head>
         <title>Bharat Kumar</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="title" content="Bharat Kumar - Full Stack Developer" />
         <meta
           name="description"
           content="Bharat Kumar is a Full Stack Developer , Learnig constantly and creating better products."
         />
         <meta name="theme-color" content="#160037" />
-        <meta name="keywords" content="" />
+        <meta
+          name="keywords"
+          content="Full Stack Developer, Software Engineer, Frontend Developer, Backend Developer"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
 
         {/* Open Graph Facebook  */}
         <meta property="og:type" content="website" />
@@ -37,7 +44,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://ik.imagekit.io/6djsamqli/Gradientify/Gradientify-Cover_c7c44xvwc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1660240912873"
+          content="https://ik.imagekit.io/alphadynamic00/Portfolio_Bharat_kumar.png?updatedAt=1699977880877"
         />
 
         {/* Twitter */}
@@ -56,7 +63,7 @@ export default function Home() {
         />
         <meta
           property="twitter:image"
-          content="https://ik.imagekit.io/6djsamqli/Gradientify/Gradientify-Cover_c7c44xvwc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1660240912873"
+          content="https://ik.imagekit.io/alphadynamic00/Portfolio_Bharat_kumar.png?updatedAt=1699977880877"
         />
 
         <link rel="shortcut icon" href="/favicon.ico" />

@@ -88,14 +88,14 @@ const Contact = () => {
             <Image src="/images/send.svg" alt="" width={30} height={30} />
           </button>
         </div>
-        <div className="flex w-full justify-center overflow-clip lg:w-1/2">
+        <div className="flex w-full justify-center overflow-clip align-top lg:w-1/2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/contact.svg" alt="" className="w-4/5 lg:w-3/5" />
+          <img src="/images/contact.svg" alt="" className="w-5/5 lg:w-4/5" />
         </div>
       </div>
       <footer className="flex w-full flex-col items-center justify-between space-y-6 bg-c2 px-12 py-4 md:flex-row md:space-y-0">
         <span className="font-poppins text-xl font-medium text-white md:text-2xl">
-          Copyright @ 2022
+          Copyright @ 2023
         </span>
         <Social />
         <span className="font-poppins text-xl font-medium text-white md:text-2xl">
