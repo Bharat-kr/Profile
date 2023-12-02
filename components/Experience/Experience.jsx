@@ -51,7 +51,7 @@ const Experience = () => {
         <div className="w-full p-6 font-poppins text-white lg:w-1/2 lg:pr-28">
           {list.map((item, idx) => {
             return (
-              <>
+              <div key={idx}>
                 {idx !== 0 && <hr className="mt-8 mb-10" />}
                 <div key={item.company}>
                   <div className="flex justify-between">
@@ -72,7 +72,7 @@ const Experience = () => {
                     })}
                   </ul>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>
