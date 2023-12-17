@@ -1,26 +1,43 @@
 import React, { useState } from "react";
 import Social from "./Social";
 import Image from "next/image";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const sendMail = () => {
-    if (name && email && message) {
-      fetch("/api/email", {
-        method: "POST",
-        body: JSON.stringify({
-          email,
-          name,
-          message,
-        }),
-        headers: {
-          "Content-type": "application/json; charset=UTF-8",
-        },
-      })
-        .then((response) => response.json())
-        .then((json) => console.log(json));
+  const [isLoading, setIsLoading] = useState(false);
+  const sendMail = async () => {
+    setIsLoading(true);
+    try {
+      if (name && email && message) {
+        await fetch("/api/email", {
+          method: "POST",
+          body: JSON.stringify({
+            email,
+            name,
+            message,
+          }),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+          },
+        })
+          .then((response) => response.json())
+          .then((json) => {
+            if (json.result.response.includes("OK")) {
+              toast.success("Successfully sent mail!");
+              setEmail("");
+              setMessage("");
+              setName("");
+            }
+          });
+      }
+    } catch (error) {
+      console.log(error.message);
+      toast.error("Try Again after some time !");
+    } finally {
+      setIsLoading(false);
     }
   };
   return (
@@ -81,8 +98,12 @@ const Contact = () => {
           </div>
 
           <button
-            className="flex items-center rounded-lg border-2 border-c8 bg-c3 px-6 py-2 font-poppins text-lg font-bold text-white hover:bg-c1 lg:text-2xl"
+            className={
+              "btn flex items-center rounded-lg border-2 border-c8 bg-c3 px-6 py-2 font-poppins text-lg font-bold text-white hover:bg-c1 lg:text-2xl" +
+              (isLoading ? " btn-anim" : "")
+            }
             onClick={sendMail}
+            disabled={isLoading}
           >
             <span className="mr-4">Send</span>
             <Image src="/images/send.svg" alt="" width={30} height={30} />

@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../styles/Home.module.css";
 import { useEffect } from "react";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   useEffect(() => {
@@ -14,6 +15,7 @@ export default function Home() {
   }, []);
   return (
     <>
+      <Toaster />
       <Head>
         <title>Bharat Kumar</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />

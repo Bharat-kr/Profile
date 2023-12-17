@@ -82,3 +82,43 @@ html {
   background-position: 200%0, 0 0;
   transition-duration: 3s;
 }
+
+:root {
+  --anim-duration: 1s;
+  --anim-speed: 1;
+  --shine-effect: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--shine-effect);
+}
+
+.btn-anim::before {
+  animation: shine var(--anim-duration) ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+    transition-property: left;
+  }
+  100% {
+    left: 100%;
+    transition-property: left;
+  }
+}
