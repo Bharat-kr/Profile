@@ -6,15 +6,25 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preview-email": "email dev"
   },
   "dependencies": {
+    "@react-email/body": "0.0.7",
+    "@react-email/container": "0.0.11",
+    "@react-email/head": "0.0.7",
+    "@react-email/heading": "0.0.11",
+    "@react-email/html": "0.0.7",
+    "@react-email/link": "0.0.7",
+    "@react-email/section": "0.0.11",
+    "@react-email/text": "0.0.7",
     "aos": "^2.3.4",
     "framer-motion": "^7.0.2",
     "next": "12.2.4",
     "nodemailer": "^6.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-email": "1.10.0",
     "react-hot-toast": "^2.4.1"
   },
   "devDependencies": {

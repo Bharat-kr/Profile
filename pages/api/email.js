@@ -1,6 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import nodemailer from "nodemailer";
-import { getHtml } from "../../utils/contact_template";
+import { render } from "@react-email/render";
+import ContactTemplate from "../../emails/ContactTemplate";
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -16,7 +17,7 @@ export default async function handler(req, res) {
     from: email, // sender address
     to: process.env.EMAIL,
     subject: `Message from - ${name}`, // Subject line
-    html: getHtml(req.body),
+    html: render(ContactTemplate({ name, email, message })),
   };
   const result = await transporter.sendMail(mailOptions);
   res.status(200).json({ result });
