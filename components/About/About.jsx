@@ -14,8 +14,8 @@ const About = () => {
             Hi Everyone! I am{" "}
             <span className="text-highlighter"> Bharat Kumar </span>hailing from
             <span className="text-highlighter"> Faridabad, Haryana.</span> I am
-            a Final Year Student of
-            <span className="text-highlighter"> 
+            a B.Tech graduate of
+            <span className="text-highlighter">
               {" "}
               Computer Science and Engineering
             </span>{" "}
@@ -33,7 +33,11 @@ const About = () => {
             <li>Web Development</li>
             <li>Web3 Development</li>
           </ul>
-          <a href="/resume/BharatKumar.pdf" download="Bharat Kumar">
+          <a
+            href="/resume/BharatKumar.pdf"
+            target="_blank"
+            // download="Bharat Kumar"
+          >
             <button className="callBackButton card-shine-effect">
               <Image
                 src="/images/download.svg"

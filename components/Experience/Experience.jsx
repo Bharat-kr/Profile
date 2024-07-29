@@ -4,6 +4,17 @@ import Chip from "../Chip/Chip";
 const Experience = () => {
   const list = [
     {
+      company: "Listed (OpeninApp)",
+      time: "13 Feb 2024 - Present",
+      post: "Jr. Backend Engineer",
+      desc: [
+        "Enhanced file upload capabilities by utilizing Presigned URLs, increasing supported file sizes by 400% from 100MB to 500MB, and ensuring reliability through robust re-upload mechanisms",
+        "Enhanced system security by implementing rate limiting and reCAPTCHA, reducing bot traffic by 80% and unauthorized access attempts",
+        "Conducted data enrichment on 15000+ users, gaining valuable insights into creators and their social handles",
+      ],
+      certifcate: "",
+    },
+    {
       company: "Acciolbis",
       time: "27 June 2022 - 31 July 2023",
       post: "Full Stack Developer",
@@ -44,7 +55,7 @@ const Experience = () => {
     >
       <h1 className="heading gradinetText-config">Experience</h1>
       <div className="flex w-full">
-        <div className="hidden items-end p-6 lg:flex lg:w-1/2 lg:pl-28">
+        <div className="hidden items-center p-6 lg:flex lg:w-1/2 lg:pl-28">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={`/images/building.svg`} className="w-full" alt="" />
         </div>
@@ -56,9 +67,15 @@ const Experience = () => {
                 <div key={item.company}>
                   <div className="flex justify-between">
                     <h3 className="text-2xl font-semibold">{item.company}</h3>
-                    <a href={item.certifcate} target="_blank" rel="noreferrer">
-                      <Chip content={"View Certificate"} />
-                    </a>
+                    {item.certifcate && (
+                      <a
+                        href={item.certifcate}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <Chip content={"View Certificate"} />
+                      </a>
+                    )}
                   </div>
                   <p className="mt-1 text-lg font-medium">{item.time}</p>
                   <p className="mt-1 text-lg font-medium">{item.post}</p>
