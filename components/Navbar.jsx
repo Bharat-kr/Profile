@@ -27,7 +27,7 @@ const Navbar = () => {
         } px-4 py-2 font-inter text-white sm:px-8 sm:py-4 md:px-16 md:py-8`}
       >
         <a className="text-2xl font-medium" href="#Home" onClick={close}>
-          Portfolio<sub className="text-base">2023</sub>
+          Portfolio
         </a>
         <nav className="hidden space-x-4 text-lg lg:flex" key="main">
           <a href="#About" className="btn-nav">

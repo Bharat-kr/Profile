@@ -116,7 +116,7 @@ const Contact = () => {
       </div>
       <footer className="flex w-full flex-col items-center justify-between space-y-6 bg-c2 px-12 py-4 md:flex-row md:space-y-0">
         <span className="font-poppins text-xl font-medium text-white md:text-2xl">
-          Copyright @ 2023
+          Copyright @ 2024
         </span>
         <Social />
         <span className="font-poppins text-xl font-medium text-white md:text-2xl">
