@@ -4,8 +4,15 @@ import Chip from "../Chip/Chip";
 const Experience = () => {
   const list = [
     {
-      company: "Listed (OpeninApp)",
-      time: "13 Feb 2024 - Present",
+      company: "Listed Inc.(OpeninApp)",
+      time: "13 Aug 2024 - Present",
+      post: "Software Development Engineer",
+      desc: ["Yet to come....."],
+      certifcate: "",
+    },
+    {
+      company: "Listed Inc.(OpeninApp)",
+      time: "13 Feb 2024 - 13 Aug 2024",
       post: "Jr. Backend Engineer",
       desc: [
         "Enhanced file upload capabilities by utilizing Presigned URLs, increasing supported file sizes by 400% from 100MB to 500MB, and ensuring reliability through robust re-upload mechanisms",

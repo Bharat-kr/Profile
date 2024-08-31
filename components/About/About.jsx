@@ -10,7 +10,7 @@ const About = () => {
       <h1 className="heading gradinetText-config">Who I am ?</h1>
       <div className="flex w-full flex-col-reverse justify-start lg:flex-row lg:justify-between">
         <div className="w-full p-4 lg:w-1/2 lg:pl-28">
-          <p className="font-poppins text-xl font-normal leading-8">
+          <p className="font-poppins text-2xl font-normal">
             Hi Everyone! I am{" "}
             <span className="text-highlighter"> Bharat Kumar </span>hailing from
             <span className="text-highlighter"> Faridabad, Haryana.</span> I am
@@ -26,12 +26,12 @@ const About = () => {
             <span className="text-highlighter"> rapid learning </span>
             and a genuine
             <span className="text-highlighter"> passion for coding </span>. I am
-            passionate about
+            learning about
           </p>
-          <ul className="textLg my-5 list-disc pl-6 font-poppins font-medium leading-7">
-            <li>UI/UX Design</li>
-            <li>Web Development</li>
-            <li>Web3 Development</li>
+          <ul className="my-5 list-disc pl-6 font-poppins text-xl font-medium">
+            <li>Frontend Development</li>
+            <li>Backend Development</li>
+            <li>Cloud Infrastructure</li>
           </ul>
           <a
             href="/resume/BharatKumar.pdf"
