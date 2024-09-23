@@ -4,7 +4,6 @@ import Main from "../components/Main";
 import Navbar from "../components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import styles from "../styles/Home.module.css";
 import { useEffect } from "react";
 import { Toaster } from "react-hot-toast";
 
@@ -17,17 +16,17 @@ export default function Home() {
     <>
       <Toaster />
       <Head>
-        <title>Bharat Kumar</title>
+        <title>Bharat Kumar - Full Stack Software Developer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="title" content="Bharat Kumar - Full Stack Developer" />
+        <meta name="title" content="Bharat Kumar - Full Stack Software Developer" />
         <meta
           name="description"
-          content="Bharat Kumar is a Full Stack Developer , Learnig constantly and creating better products."
+          content="Bharat Kumar is a Full Stack Software Developer specializing in creating efficient and scalable web applications. Explore my portfolio to learn more about my projects and skills."
         />
         <meta name="theme-color" content="#160037" />
         <meta
           name="keywords"
-          content="Full Stack Developer, Software Engineer, Frontend Developer, Backend Developer"
+          content="Full Stack Developer, Software Developer, Web Developer, Frontend Developer, Backend Developer, JavaScript, React, Node.js"
         />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -35,14 +34,11 @@ export default function Home() {
 
         {/* Open Graph Facebook  */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bharatkumar.vercel.app/" />
-        <meta
-          property="og:title"
-          content="Bharat Kumar - Full Stack Developer"
-        />
+        <meta property="og:url" content="https://bharatkumar.me/" />
+        <meta property="og:title" content="Bharat Kumar - Full Stack Software Developer" />
         <meta
           property="og:description"
-          content="Bharat Kumar is a Full Stack Developer , Learnig constantly and creating better products."
+          content="Bharat Kumar is a Full Stack Software Developer specializing in creating efficient and scalable web applications. Explore my portfolio to learn more about my projects and skills."
         />
         <meta
           property="og:image"
@@ -57,11 +53,11 @@ export default function Home() {
         />
         <meta
           property="twitter:title"
-          content="Bharat Kumar - Full Stack Developer"
+          content="Bharat Kumar - Full Stack Software Developer"
         />
         <meta
           property="twitter:description"
-          content="Bharat Kumar is a Full Stack Developer , Learnig constantly and creating better products."
+          content="Bharat Kumar is a Full Stack Software Developer specializing in creating efficient and scalable web applications. Explore my portfolio to learn more about my projects and skills."
         />
         <meta
           property="twitter:image"

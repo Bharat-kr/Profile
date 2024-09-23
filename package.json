@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "preview-email": "email dev"
+    "preview-email": "email dev",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@react-email/body": "0.0.7",
@@ -21,6 +22,7 @@
     "aos": "^2.3.4",
     "framer-motion": "^7.0.2",
     "next": "12.2.4",
+    "next-sitemap": "^4.2.3",
     "nodemailer": "^6.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",

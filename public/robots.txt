@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://bharatkumar.me
+
+# Sitemaps
+Sitemap: https://bharatkumar.me/sitemap.xml
