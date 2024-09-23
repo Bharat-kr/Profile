@@ -113,7 +113,7 @@ const Home = () => {
         </p>
         <Name />
         <p className="mb-4 font-montserrat text-2xl font-semibold md:text-5xl 2xl:text-7xl">
-          and a Software Developer
+          Software Developer
         </p>
         <Social />
       </div>
